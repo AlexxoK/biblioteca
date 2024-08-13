@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.diegomonterroso.webapp.biblioteca.model.Categoria;
+import com.diegomonterroso.webapp.biblioteca.model.Empleado;
 import com.diegomonterroso.webapp.biblioteca.repository.CategoriaRepository;
 
 @Service
@@ -32,6 +33,17 @@ public class CategoriaService implements ICategoriaService {
     @Override
     public void eliminarCategoria(Categoria categoria) {
         categoriaRepository.delete(categoria);
+    }
+
+    @Override
+    public Boolean verificarCategoriaDuplicada(Categoria categoria) {
+        Boolean flag = Boolean.FALSE;
+        List<Categoria> categorias = listarCategorias();
+
+        for (Categoria c : categorias) {
+            
+        }
+        return flag;
     }
 
 }

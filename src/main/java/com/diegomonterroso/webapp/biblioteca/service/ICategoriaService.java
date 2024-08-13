@@ -14,4 +14,6 @@ public interface ICategoriaService {
 
     public void eliminarCategoria(Categoria categoria);
 
+    public Boolean verificarCategoriaDuplicada(Categoria categoria);
+
 }
