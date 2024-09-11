@@ -6,7 +6,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.diegomonterroso.webapp.biblioteca.model.Categoria;
-import com.diegomonterroso.webapp.biblioteca.model.Empleado;
 import com.diegomonterroso.webapp.biblioteca.repository.CategoriaRepository;
 
 @Service
